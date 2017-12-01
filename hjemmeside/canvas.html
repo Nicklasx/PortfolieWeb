@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>canvas</title>
+</head>
+<body>
+
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+        Your browser does not support the HTML5 canvas tag.
+    </canvas>
+
+    <br />
+
+    <button onclick="tegn()">tegn</button>
+    <button onclick="flyt()">flyt</button>
+    <button onclick="flytogtegn()">flyt og tegn</button>
+
+    <script>
+
+        var x = 70;
+        var y = 50;
+        var c = document.getElementById("myCanvas");
+        document.body.addEventListener('keydown', doKeyDown);
+        var ctx = c.getContext("2d");
+
+        function FlytOgTegnRight(argument) {
+        	FlytRight();
+        	Tegn();
+        }
+
+        function FlytOgTegnLeft(argument) {
+        	FlytLeft();
+        	Tegn();
+        }
+
+        function FlytOgTegnUp(argument) {
+        	FlytUp();
+        	Tegn();
+        }
+
+        function FlytOgTegnDown(argument) {
+        	FlytDown();
+        	Tegn();
+        }
+
+        function FlytRight()
+        {
+            x = x + 10;
+        }
+
+        function FlytLeft()
+        {
+            x = x - 10;
+        }
+
+        function FlytUp()
+        {
+            y = y - 10;
+        }
+
+        function FlytDown()
+        {
+            y = y + 10;
+        }
+
+        function Tegn() {
+            ctx.clearRect(0, 0, c.width, c.height);
+            ctx.beginPath();
+            ctx.rect(x, y, 10, 10);
+            ctx.stroke();
+        }
+
+        function doKeyDown(e) {
+        	if (e.keyCode == 68) {
+        		FlytOgTegnRight();
+        	}
+
+        	if (e.keyCode == 65) {
+        		FlytOgTegnLeft();
+        	}
+
+        	if (e.keyCode == 87) {
+        		FlytOgTegnUp();
+        	}
+
+        	if (e.keyCode == 83) {
+        		FlytOgTegnDown();
+        	}
+        }
+    </script>
+</body>
+</html>

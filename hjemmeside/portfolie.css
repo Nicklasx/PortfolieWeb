@@ -1,0 +1,17 @@
+html {
+	max-width: 1250px; 
+	max-height: 500px;
+	min-width: 250px;
+	min-height: 250px;
+}
+
+#Overskrift {
+	color: blue;
+	text-align: center;
+	width: 125px;
+	background-color: red;
+}
+
+body {
+	background-image: url("pokemonwall.jpg");
+}

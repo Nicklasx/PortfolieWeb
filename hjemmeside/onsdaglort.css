@@ -1,0 +1,33 @@
+#et {
+	background-color: green;
+	width: 50px;
+	border: 25px solid green;
+	padding: 25px;
+	margin: 25px;
+	outline-style: solid;
+	outline-color: black;
+	display: inline-block;
+	text-align: center;
+}
+
+#to {
+	background-color: red;
+	width: 50px;
+	border: 25px solid red;
+	padding: 25px;
+	margin: 25px;
+	outline-style: solid;
+	outline-color: black;
+	display: inline-block;
+	text-align: center;
+}
+
+.back {
+	background-color: blue;
+	outline-style: solid;
+	outline-color: black;
+}
+
+html {
+	max-width: 625px;
+}
