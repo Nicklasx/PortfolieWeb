@@ -6,10 +6,10 @@ html {
 }
 
 #Overskrift {
-	color: blue;
+	color: #4CC4C5;
 	text-align: center;
 	width: 125px;
-	background-color: red;
+	background-color: #FB2E01;
 }
 
 body {
