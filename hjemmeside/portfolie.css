@@ -59,3 +59,8 @@ body {
 iframe {
 	max-width: 350px;
 }
+
+.About {
+	max-width: 700px;
+	background-color: #b2f490;
+}
